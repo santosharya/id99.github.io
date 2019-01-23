@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="Thumbnail Pile Effect with Automatic Grouping" />
+	<meta name="keywords" content="jquery, pile, effect, images, grid, thumbnails, css3, grouping, albums" />
+	<meta name="author" content="Codrops" />
+
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/stapel.css" />
+	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+	<link rel="stylesheet" type="text/css" href="css/fancybox.css" />
+
+	<script src="js/modernizr.custom.63321.js"></script>
+
+
+	<!--[if lte IE 7]><style>.support-note .note-ie{display:block;}</style><![endif]-->
+</head>
+
+<body>
+	<div class="container">
+		<header class="clearfix">
+
+			<h1></h1>
+
+		</header>
+
+		<section class="main">
+
+			<div class="wrapper">
+
+				<div class="topbar">
+					<span id="close" class="back">&larr;</span>
+					<h2>My Works</h2>
+					<h3 id="name"></h3>
+				</div>
+
+				<ul id="tp-grid" class="tp-grid">
+
+                    <li data-pile="Wireframe">
+						<a class="fancybox fade" href="images/gallery/big/ambit_wireframe.jpg" data-fancybox-group="gallery" title="Ambit">
+							<span class="tp-info"><span>Ambit</span></span>
+							<img src="images/wireframe/ambit_wireframe.jpg" />
+						</a>
+					</li>
+                    
+                    <li data-pile="Wireframe">
+						<a class="fancybox fade" href="images/gallery/big/iinview_wireframe.jpg" data-fancybox-group="gallery" title="iinview">
+							<span class="tp-info"><span>iinview</span></span>
+							<img src="images/wireframe/iinview_wireframe.jpg" />
+						</a>
+					</li>
+                    
+                    <li data-pile="Wireframe">
+						<a class="fancybox fade" href="images/gallery/big/creditres_wireframe.jpg" data-fancybox-group="gallery" title="Creditres">
+							<span class="tp-info"><span>Creditres</span></span>
+							<img src="images/wireframe/creditres_wireframe.jpg" />
+						</a>
+					</li>
+                    
+                    <li data-pile="Wireframe">
+						<a class="fancybox fade" href="images/gallery/big/ekart_wireframe.jpg" data-fancybox-group="gallery" title="eKart">
+							<span class="tp-info"><span>eKart</span></span>
+							<img src="images/wireframe/ekart_wireframe.jpg" />
+						</a>
+					</li>
+
+                    <li data-pile="Web Templates">
+						<a class="fancybox fade" href="images/gallery/big/bbva.jpg" data-fancybox-group="gallery" title="bbva">
+							<span class="tp-info"><span>Bbva</span></span>
+							<img src="images/templates/bbva_template.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Web Templates">
+						<a class="fancybox fade" href="images/gallery/big/sydney.jpg" data-fancybox-group="gallery" title="Sydney music works">
+							<span class="tp-info"><span>Sydney music works</span></span>
+							<img src="images/templates/sydney.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Web Templates">
+						<a class="fancybox fade" href="images/gallery/big/benefitassurance.jpg" data-fancybox-group="gallery" title="Benefit assurance">
+							<span class="tp-info"><span>Benefit assurance</span></span>
+							<img src="images/templates/benefitassurance.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Web Templates">
+						<a class="fancybox fade" href="images/gallery/big/desidhaba.jpg" data-fancybox-group="gallery" title="Desibaba">
+							<span class="tp-info"><span>Desibaba</span></span>
+							<img src="images/templates/desibaba.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Web Templates">
+						<a class="fancybox fade" href="images/gallery/big/gplus.jpg" data-fancybox-group="gallery" title="Google Plus">
+							<span class="tp-info"><span>Google Plus</span></span>
+							<img src="images/templates/gplus.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Web Templates">
+						<a class="fancybox fade" href="images/gallery/big/iinview_filter.jpg" data-fancybox-group="gallery" title="Filter gallery">
+							<span class="tp-info"><span>Filter gallery</span></span>
+							<img src="images/templates/iinview_filter.jpg" />
+						</a>
+					</li>
+		
+					<li data-pile="Web Templates">
+						<a class="fancybox fade" href="images/gallery/big/kensington.jpg" data-fancybox-group="gallery" title="Kensington">
+							<span class="tp-info"><span>Kensington</span></span>
+							<img src="images/templates/kensington.jpg" />	
+						</a>
+					</li>
+
+					<li data-pile="Web Templates">
+						<a class="fancybox fade" href="images/gallery/big/noq3.jpg" data-fancybox-group="gallery" title="NOQ">
+							<span class="tp-info"><span>NOQ</span></span>
+							<img src="images/templates/noq3.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Web Templates">
+						<a class="fancybox fade" href="images/gallery/big/penstar.jpg" data-fancybox-group="gallery" title="Penstar Power">
+							<span class="tp-info"><span>Penstar Power</span></span>
+							<img src="images/templates/penstar.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Web Templates">
+						<a class="fancybox fade" href="images/gallery/big/Stephen.jpg" data-fancybox-group="gallery" title="Stephen">
+							<span class="tp-info"><span>Stephen</span></span>
+							<img src="images/templates/stephen.jpg" />
+						</a>
+					</li>
+					
+					<li data-pile="Web Templates">
+						<a class="fancybox fade" href="images/gallery/big/tekdyn2.jpg" data-fancybox-group="gallery" title="tekdynamics">
+							<span class="tp-info"><span>tekdynamics</span></span>
+							<img src="images/templates/tekdyn2.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Web Templates">
+						<a class="fancybox fade" href="images/gallery/big/tekdyn.jpg" data-fancybox-group="gallery" title="tekdynamics">
+							<span class="tp-info"><span>tekdynamics</span></span>
+							<img src="images/templates/tekdyn.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Web Templates">
+						<a class="fancybox fade" href="images/gallery/big/Telzy.jpg" data-fancybox-group="gallery" title="Telzy">
+							<span class="tp-info"><span>Telzy</span></span>
+							<img src="images/templates/telzy.jpg" />
+						</a>
+					</li>
+                    
+                    <li data-pile="Web Templates">
+						<a class="fancybox fade" href="images/gallery/big/foru.jpg" data-fancybox-group="gallery" title="Foru">
+							<span class="tp-info"><span>Foru</span></span>
+							<img src="images/templates/foru.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Mobile">
+                        <a class="fancybox fade" href="images/gallery/big/mobileapp2.jpg" data-fancybox-group="gallery" title="Tricolor App">
+							<span class="tp-info"><span>Tricolor App</span></span>
+				        		<img src="images/mobile/tricolorapp.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Mobile">
+                        <a class="fancybox fade" href="images/gallery/big/mobileapp.jpg" data-fancybox-group="gallery" title="Tekcenture App">
+							<span class="tp-info"><span>Tekcenture App</span></span>
+                        				<img src="images/mobile/Tekapp.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Login">
+						<a class="fancybox fade" href="images/gallery/big/auctioncredit_login2.jpg" data-fancybox-group="gallery" title="Auctioncredit">
+							<span class="tp-info"><span>Auctioncredit</span></span>
+				        		<img src="images/login/auctioncredit_login2.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Login">
+                        <a class="fancybox fade" href="images/gallery/big/fleetserve_login.jpg" data-fancybox-group="gallery" title="Fleetserve">	
+							<span class="tp-info"><span>Fleetserve</span></span>
+							<img src="images/login/fleetserve_login.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Login">
+						<a class="fancybox fade" href="images/gallery/big/naia.jpg" data-fancybox-group="gallery" title="Naia">
+							<span class="tp-info"><span>Naia</span></span>
+							<img src="images/login/naia.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Login">
+						<a class="fancybox fade" href="images/gallery/big/quester_login.jpg" data-fancybox-group="gallery" title="Quester">
+							<span class="tp-info"><span>Quester</span></span>
+							<img src="images/login/quester_login.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Dashboard">
+						<a class="fancybox fade" href="images/gallery/big/dashboard2.jpg" data-fancybox-group="gallery" title="Dashboard Timesheet">
+							<span class="tp-info"><span>Dashboard Timesheet</span></span>
+							<img src="images/dashboard/dashboard2.jpg" />
+						</a>
+					</li>
+					
+					<li data-pile="Dashboard">
+						<a class="fancybox fade" href="images/gallery/big/dashboard1.jpg" data-fancybox-group="gallery" title="Dashboard">
+							<span class="tp-info"><span>Dashboard</span></span>
+							<img src="images/dashboard/dashboard.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Logos">
+						<a class="fancybox fade" href="images/gallery/big/bid.jpg" data-fancybox-group="gallery" title="Bid Vestor">
+							<span class="tp-info"><span>Bid Vestor</span></span>
+							<img src="images/logos/bid.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Logos">
+						<a class="fancybox fade" href="images/gallery/big/homeassure.jpg" data-fancybox-group="gallery" title="Home Assure">
+							<span class="tp-info"><span>Home Assure</span></span>
+							<img src="images/logos/homeassure.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Logos">
+						<a class="fancybox fade" href="images/gallery/big/debt2.jpg" data-fancybox-group="gallery" title="Debt Arbitrators">
+							<span class="tp-info"><span>Debt Arbitrators</span></span>
+							<img src="images/logos/debt2.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Logos">
+						<a class="fancybox fade" href="images/gallery/big/adm.jpg" data-fancybox-group="gallery" title="American Debt Mediators">
+							<span class="tp-info"><span>American Debt Mediators</span></span>
+							<img src="images/logos/adm.jpg" />
+						</a>
+
+					<li data-pile="Logos">
+						<a class="fancybox fade" href="images/gallery/big/Coasters.jpg" data-fancybox-group="gallery" title="Coasters">
+							<span class="tp-info"><span>Coasters</span></span>
+							<img src="images/logos/coasters.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Logos">
+						<a class="fancybox fade" href="images/gallery/big/Cup.jpg" data-fancybox-group="gallery" title="Cup">
+							<span class="tp-info"><span>Cup</span></span>
+							<img src="images/logos/cup.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Logos">
+						<a class="fancybox fade" href="images/gallery/big/Glass.jpg" data-fancybox-group="gallery" title="Glass">
+							<span class="tp-info"><span>Glass</span></span>
+							<img src="images/logos/glass.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Logos">
+						<a class="fancybox fade" href="images/gallery/big/Businesscard.jpg" data-fancybox-group="gallery" title="Businesscard">
+							<span class="tp-info"><span>Businesscard</span></span>
+							<img src="images/logos/businesscard.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Brochures">
+						<a class="fancybox fade" href="images/gallery/big/bro1.jpg" data-fancybox-group="gallery" title="Brochure">
+							<span class="tp-info"><span>Brochure</span></span>
+							<img src="images/brochures/bro1.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Brochures">
+						<a class="fancybox fade" href="images/gallery/big/ppt1.jpg" data-fancybox-group="gallery" title="PPT Presentation">
+							<span class="tp-info"><span>PPT Presentation</span></span>
+							<img src="images/brochures/ppt1.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Brochures">
+						<a class="fancybox fade" href="images/gallery/big/Letterhead.jpg" data-fancybox-group="gallery" title="Letterhead">
+							<span class="tp-info"><span>Letterhead</span></span>
+							<img src="images/brochures/letterhead.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Brochures">
+						<a class="fancybox fade" href="images/gallery/big/Letterhead2.jpg" data-fancybox-group="gallery" title="Letterhead">
+							<span class="tp-info"><span>Letterhead</span></span>
+							<img src="images/brochures/letterhead2.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Brochures">
+						<a class="fancybox fade" href="images/gallery/big/Letterhead3.jpg" data-fancybox-group="gallery" title="Letterhead">
+							<span class="tp-info"><span>Letterhead</span></span>
+							<img src="images/brochures/letterhead3.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Brochures">
+						<a class="fancybox fade" href="images/gallery/big/Letterhead4.jpg" data-fancybox-group="gallery" title="Letterhead">
+							<span class="tp-info"><span>Letterhead</span></span>
+							<img src="images/brochures/letterhead4.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Brochures">
+						<a class="fancybox fade" href="images/gallery/big/Letterhead5.jpg" data-fancybox-group="gallery" title="Letterhead">
+							<span class="tp-info"><span>Letterhead</span></span>
+							<img src="images/brochures/letterhead5.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Brochures">
+						<a class="fancybox fade" href="images/gallery/big/st1.jpg" data-fancybox-group="gallery" title="Envolope">
+							<span class="tp-info"><span>Envolope</span></span>
+							<img src="images/brochures/st1.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Brochures">
+						<a class="fancybox fade" href="images/gallery/big/st2.jpg" data-fancybox-group="gallery" title="Envolope">
+							<span class="tp-info"><span>Envolope</span></span>
+							<img src="images/brochures/st2.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Brochures">
+						<a class="fancybox fade" href="images/gallery/big/st3.jpg" data-fancybox-group="gallery" title="Envolope">
+							<span class="tp-info"><span>Envolope</span></span>
+							<img src="images/brochures/st3.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Brochures">
+						<a class="fancybox fade" href="images/gallery/big/st4.jpg" data-fancybox-group="gallery" title="Envolope">
+							<span class="tp-info"><span>Envolope</span></span>
+							<img src="images/brochures/st4.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Brochures">
+						<a class="fancybox fade" href="images/gallery/big/st5.jpg" data-fancybox-group="gallery" title="Envolope">
+							<span class="tp-info"><span>Envolope</span></span>
+							<img src="images/brochures/st5.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Brochures">
+						<a class="fancybox fade" href="images/gallery/big/st6.jpg" data-fancybox-group="gallery" title="Envolope">
+							<span class="tp-info"><span>Envolope</span></span>
+							<img src="images/brochures/st6.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Brochures">
+						<a class="fancybox fade" href="images/gallery/big/st7.jpg" data-fancybox-group="gallery" title="Envolope">
+							<span class="tp-info"><span>Envolope</span></span>
+							<img src="images/brochures/st7.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Brochures">
+						<a class="fancybox fade" href="images/gallery/big/st8.jpg" data-fancybox-group="gallery" title="Envolope">
+							<span class="tp-info"><span>Envolope</span></span>
+							<img src="images/brochures/st8.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Brochures">
+						<a class="fancybox fade" href="images/gallery/big/Graph.jpg" data-fancybox-group="gallery" title="Graph">
+							<span class="tp-info"><span>Graph</span></span>
+							<img src="images/brochures/graph.jpg" />
+						</a>
+					</li>
+                    
+                    <li data-pile="Flyer">
+						<a class="fancybox fade" href="images/gallery/big/flyer.jpg" data-fancybox-group="gallery" title="Flyer">
+							<span class="tp-info"><span>Flyer</span></span>
+							<img src="images/Flyers/flyer.jpg" />
+						</a>
+					</li>
+
+                    <li data-pile="Flyer">
+						<a class="fancybox fade" href="images/gallery/big/flyer2.jpg" data-fancybox-group="gallery" title="Flyer">
+							<span class="tp-info"><span>Flyer</span></span>
+							<img src="images/Flyers/flyer2.jpg" />
+						</a>
+					</li>
+                    
+					<li data-pile="Textures">
+						<a class="fancybox fade" href="images/gallery/big/texture01.jpg" data-fancybox-group="gallery" title="3d Wall Pattern">
+							<span class="tp-info"><span>3d Wall Pattern</span></span>
+							<img src="images/textures/texture01.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Textures">
+						<a class="fancybox fade" href="images/gallery/big/texture02.jpg" data-fancybox-group="gallery" title="Flower Art">
+							<span class="tp-info"><span>Flower Art</span></span>
+							<img src="images/textures/texture02.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Textures">
+						<a class="fancybox fade" href="images/gallery/big/texture03.jpg" data-fancybox-group="gallery" title="Cow Hide">
+							<span class="tp-info"><span>Cow Hide</span></span>
+							<img src="images/textures/texture03.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Textures">
+						<a class="fancybox fade" href="images/gallery/big/texture04.jpg" data-fancybox-group="gallery" title="3d Wall Pattern">
+							<span class="tp-info"><span>3d Wall Pattern</span></span>
+							<img src="images/textures/texture04.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Textures">
+						<a class="fancybox fade" href="images/gallery/big/texture05.jpg" data-fancybox-group="gallery" title="Paver Tile">
+							<span class="tp-info"><span>Paver Tile</span></span>
+							<img src="images/textures/texture05.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Textures">
+						<a class="fancybox fade" href="images/gallery/big/texture06.jpg" data-fancybox-group="gallery" title="3d Flower Art">
+							<span class="tp-info"><span>3d Flower Art</span></span>
+							<img src="images/textures/texture06.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Textures">
+						<a class="fancybox fade" href="images/gallery/big/texture07.jpg" data-fancybox-group="gallery" title="Wood Strips">
+							<span class="tp-info"><span>Wood Strips</span></span>
+							<img src="images/textures/texture07.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Textures">
+						<a class="fancybox fade" href="images/gallery/big/texture08.jpg" data-fancybox-group="gallery" title="Fabric Pattern">
+							<span class="tp-info"><span>Fabric Pattern</span></span>
+							<img src="images/textures/texture08.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Ebooks">
+						<a class="fancybox fade" href="images/gallery/big/Ebook01.jpg" data-fancybox-group="gallery" title="Never Tell Lies">
+							<span class="tp-info"><span>Never Tell Lies</span></span>
+							<img src="images/Ebooks/Ebook01.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Ebooks">
+						<a class="fancybox fade" href="images/gallery/big/Ebook02.jpg" data-fancybox-group="gallery" title="Torn">
+							<span class="tp-info"><span>Torn</span></span>
+							<img src="images/Ebooks/Ebook02.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Ebooks">
+						<a class="fancybox fade" href="images/gallery/big/Ebook03.jpg" data-fancybox-group="gallery" title="A Single Step">
+							<span class="tp-info"><span>A Single Step</span></span>
+							<img src="images/Ebooks/Ebook03.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Ebooks">
+						<a class="fancybox fade" href="images/gallery/big/Ebook04.jpg" data-fancybox-group="gallery" title="One Sweet Christmas">
+							<span class="tp-info"><span>One Sweet Christmas</span></span>
+							<img src="images/Ebooks/Ebook04.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Ebooks">
+						<a class="fancybox fade" href="images/gallery/big/Ebook05.jpg" data-fancybox-group="gallery" title="Surfing Through Seconds">
+							<span class="tp-info"><span>Surfing Through Seconds</span></span>
+							<img src="images/Ebooks/Ebook05.jpg" />
+						</a>
+					</li>
+
+					<li data-pile="Ebooks">
+						<a class="fancybox fade" href="images/gallery/big/Ebook06.jpg" data-fancybox-group="gallery" title="My Journey to Heaven">
+							<span class="tp-info"><span>My Journey to Heaven</span></span>
+							<img src="images/Ebooks/Ebook06.jpg" />
+						</a>
+					</li>
+                    
+
+		</ul>
+			</div>
+		</section>
+
+	</div>
+	<!-- /container -->
+	<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+	<script src="js/jquery_004.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery.stapel.js"></script>
+
+
+
+
+	<script type="text/javascript">
+		$(function() {
+
+			var $grid = $('#tp-grid'),
+				$name = $('#name'),
+				$close = $('#close'),
+				$loader = $('<div class="loader"><i></i><i></i><i></i><i></i><i></i><i></i><span>Loading...</span></div>').insertBefore($grid),
+				stapel = $grid.stapel({
+					onLoad: function() {
+						$loader.remove();
+					},
+					onBeforeOpen: function(pileName) {
+						$name.html(pileName);
+					},
+					onAfterOpen: function(pileName) {
+						$close.show();
+					}
+				});
+
+			$close.on('click', function() {
+				$close.hide();
+				$name.empty();
+				stapel.closePile();
+			});
+
+		});
+
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.fancybox').fancybox();
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title: {
+						type: 'outside'
+					},
+					overlay: {
+						speedOut: 0
+					}
+				}
+			});
+		});
+
+	</script>
+</body>
+
+</html>
